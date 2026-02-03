@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if(n != 0){
@@ -6,5 +7,10 @@ class Solution {
             }
             Arrays.sort(nums1);
         }
+    }
+}
+class Hello{
+    public static void main(String[] args) {
+        Solution sol = new Solution();
     }
 }

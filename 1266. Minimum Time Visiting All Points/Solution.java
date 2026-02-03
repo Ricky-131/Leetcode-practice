@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {
         int time = 0;

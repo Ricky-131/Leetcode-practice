@@ -1,3 +1,4 @@
+import java.util.*;
 class SegmentTree {
     int[] cnt, cover, xs;
     int n;

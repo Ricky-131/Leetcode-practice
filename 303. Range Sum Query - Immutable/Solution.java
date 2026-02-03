@@ -1,3 +1,4 @@
+import java.util.*;
 class NumArray {
     int arr[] = new int[1000];
     public NumArray(int[] nums) {
