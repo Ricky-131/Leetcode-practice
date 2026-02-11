@@ -2,7 +2,7 @@ package LC9_Palindrome_Number;
 import java.util.*;
 class Solution {
     public boolean isPalindrome(int x) {
-        if(x<0){
+        if(x < 0){
             return false;
         }
         int temp = x;
