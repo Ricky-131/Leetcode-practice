@@ -1,3 +1,5 @@
+package LC1356_Sort_Integers_by_The_Number_of_1_Bits;
+import java.util.*;
 class Solution {
     public int[] sortByBits(int[] arr) {
         for (int i = 0; i<arr.length; i++){
