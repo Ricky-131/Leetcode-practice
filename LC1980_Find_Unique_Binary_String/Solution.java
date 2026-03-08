@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public String findDifferentBinaryString(String[] nums) {
         int n = nums.length;
-        Set set = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for(String num : nums) {
             set.add(Integer.parseInt(num, 2));
         }
