@@ -1,3 +1,5 @@
+package LC1888_Minimum_Number_of_Flips_to_Make_the_Binary_String_Alternating;
+import java.util.*;
 class Solution {
     public int minFlips(String s) {
         int n = s.length();
