@@ -1,4 +1,4 @@
-package LC3129_Find_All_Possible_Stable_Binary_Arrays_I;
+package LC3130_Find_All_Possible_Stable_Binary_Arrays_II;
 import java.util.*;
 class Solution {
     public int numberOfStableArrays(int zero, int one, int limit) {
