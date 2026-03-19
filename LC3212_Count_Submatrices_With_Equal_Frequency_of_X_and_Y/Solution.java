@@ -1,3 +1,5 @@
+package LC3212_Count_Submatrices_With_Equal_Frequency_of_X_and_Y;
+import java.util.*;
 class Solution {
     public int numberOfSubmatrices(char[][] grid) {
         int m = grid.length;
