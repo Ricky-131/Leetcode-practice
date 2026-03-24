@@ -1,3 +1,5 @@
+package LC1594_Maximum_Non_Negative_Product_in_a_Matrix;
+import java.util.*;
 class Solution {
     public int maxProductPath(int[][] grid) {
         int m = grid.length;
