@@ -1,0 +1,35 @@
+#include <vector>
+using namespace std;
+class Solution {
+    int dx[4] = {1, -1, 0, 0};
+    int dy[4] = {0, 0, 1, -1};
+
+    bool dfs(int x, int y, int px, int py, vector<vector<char>>& grid, vector<vector<bool>>& vis) {
+        vis[x][y] = true;
+        int n = grid.size(), m = grid[0].size();
+        for(int d=0; d<4; d++){
+            int nx = x + dx[d], ny = y + dy[d];
+            if(nx < 0 || ny < 0 || nx >= n || ny >= m) continue;
+            if(grid[nx][ny] != grid[x][y]) continue;
+            if(vis[nx][ny] && (nx != px || ny != py)) return true;
+            if(!vis[nx][ny]){
+                if(dfs(nx, ny, x, y, grid, vis)) return true;
+            }
+        }
+        return false;
+    }
+
+public:
+    bool containsCycle(vector<vector<char>>& grid) {
+        int n = grid.size(), m = grid[0].size();
+        vector<vector<bool>> vis(n, vector<bool>(m, false));
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if(!vis[i][j]){
+                    if(dfs(i, j, -1, -1, grid, vis)) return true;
+                }
+            }
+        }
+        return false;
+    }
+};
