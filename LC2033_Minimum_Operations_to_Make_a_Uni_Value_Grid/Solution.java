@@ -11,7 +11,8 @@ class Solution {
                 arr[k++] = val;
         }
         Arrays.sort(arr);
-        int res = 0, median = arr[arr.length / 2];
+        int res = 0;
+        int median = arr[arr.length / 2];
         for(int val : arr){
             if((val - arr[0]) % x != 0) return -1;
             res += Math.abs(val - median) / x;
