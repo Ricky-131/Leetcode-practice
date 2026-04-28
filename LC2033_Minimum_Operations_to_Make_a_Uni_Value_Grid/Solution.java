@@ -2,10 +2,13 @@ package LC2033_Minimum_Operations_to_Make_a_Uni_Value_Grid;
 import java.util.*;
 class Solution {
     public int minOperations(int[][] grid, int x) {
-        int[] arr = new int[grid.length * grid[0].length];
+        int m = grid.length;
+        int n = grid[0].length;
+        int[] arr = new int[m * n];
         int k = 0;
         for(int[] row : grid){
-            for(int val : row) arr[k++] = val;
+            for(int val : row) 
+                arr[k++] = val;
         }
         Arrays.sort(arr);
         int res = 0, median = arr[arr.length / 2];
