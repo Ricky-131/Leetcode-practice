@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     int rotatedDigits(int n) {
-        int cnt = 0;
+        int count = 0;
         for(int i=1; i<=n; i++) {
             int check = i;
             bool valid = true, changed = false;
@@ -15,8 +15,8 @@ public:
                 else if(digit == 2 || digit == 5 || digit == 6 || digit == 9) changed = true;
                 check /= 10;
             }
-            if(valid && changed) cnt++;
+            if(valid && changed) count++;
         }
-        return cnt;
+        return count;
     }
 };
