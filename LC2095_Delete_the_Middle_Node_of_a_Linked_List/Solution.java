@@ -1,3 +1,5 @@
+package LC2095_Delete_the_Middle_Node_of_a_Linked_List;
+import java.util.*;
 class Solution {
     public ListNode deleteMiddle(ListNode head) {
         if(head == null || head.next == null)   return null;
